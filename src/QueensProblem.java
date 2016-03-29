@@ -33,8 +33,8 @@ public class QueensProblem {
 	public boolean isPlaceValid(int rowIndex, int columnIndex) {
 		for (int i = 0; i < rowIndex; i++) {
 			if (queensArray[i] == columnIndex) return false; // same column
-			if ((i - rowIndex) == (queensArray[i] - columnIndex)) return false; // for ascending .. tehat bal fentrol megy jobb le
-			if ((i - rowIndex) == (columnIndex - queensArray[i])) return false;   // for descending...tehat jobb fentrol megy bal le
+			if ((i - rowIndex) == (queensArray[i] - columnIndex)) return false; // for ascending
+			if ((i - rowIndex) == (columnIndex - queensArray[i])) return false;   // for descending
 		}
 		
 		return true;
